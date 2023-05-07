@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+$dark-color: #333333;
+$light-color: #FFFFFF;
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.slogan{
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0 15px;
+}
+

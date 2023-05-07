@@ -1,0 +1,128 @@
+.contacts-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 63px;
+}
+
+.contacts-cont__title{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $dark-color;
+    margin-bottom: 40px;
+}
+
+.contacts-cont__items-cont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    width: 100%;
+    padding: 0 25px 59px 25px;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.contact-header{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: $dark-color;
+    padding-bottom: 25px;
+    margin-top: 30px;
+}
+
+.contact-info{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $dark-color;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.contact-info>li{
+    position: relative;
+    padding-left: 30px;
+}
+
+.main-office>li:first-child:before{
+    content: url(../images/icons/location-icon.svg);
+    position: absolute;
+    left: 0;
+}
+
+.phone-numbers>li:first-child:before{
+    content: url(../images/icons/phone-icon2.svg);
+    position: absolute;
+    left: 0;
+}
+
+.emails>li:first-child:before{
+    content: url(../images/icons/email_icon.svg);
+    position: absolute;
+    left: 0;
+}
+
+.add-addresses>li:first-child:before{
+    content: url(../images/icons/location-icon.svg);
+    position: absolute;
+    left: 0;
+}
+
+.contacts-cont__map-wrap{
+    margin-top: 60px;
+}
+
+.contacts-cont__map-wrap>iframe{
+    max-width: 100%;
+    max-height: 750px;
+    min-width: 300px;
+    min-height: 202px;
+}
+
+@media (max-width: 991.98px) {
+    .contacts-cont__map-wrap>iframe{
+        padding: 0 10px 0 10px;
+        width: 840px;
+        height: 567px;
+    }
+}
+
+
+@media screen and (max-width: 917px) {
+    .contacts-cont__items-cont{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contacts-cont__map-wrap>iframe{
+        padding: 0 10px 0 10px;
+        height: 505px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .contacts-cont__items-cont{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contacts-cont__map-wrap>iframe{
+        padding: 0 10px 0 10px;
+        height: 327px;
+    }
+}
+
+

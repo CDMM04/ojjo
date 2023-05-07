@@ -1,0 +1,113 @@
+.additional-info-cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 103px;
+    margin: 150px auto 150px auto;
+    flex-basis: 920px;
+
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.additional-info-cont__seo-cont{
+    max-width: 540px;
+    min-height: 240px;
+    background: rgb(255,249,249);
+    background: linear-gradient(0deg, rgba(255,249,249,1) 15%, rgba(51,51,51,1) 82%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.additional-info-cont__seo-button{
+    display: flex;
+    height: 26px;
+    background-color: #FFFFFF;
+    border-bottom: 1px dashed #333333;
+}
+
+.additional-info-cont__seo-button>p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.additional-info-cont__icons-cont{
+    width: 277px;
+    height: 296px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 50px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+
+.additional-info-cont__icon-cont{
+    height: 133px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.delivery-cont{
+    background-image: url(../images/icons/delivery-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.design-cont{
+    background-image: url(../images/icons/blocknote-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.fitting-cont{
+    background-image: url(../images/icons/design-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.approach-cont{
+    background-image: url(../images/icons/jewelry-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media screen and (max-width:991.98px) {
+    .additional-info-cont__icons-cont{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .additional-info-cont__seo-text{
+        padding: 0 15px;
+    }
+    .additional-info-cont__seo-button{
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,61 @@
+
+@import 'main';
+
+@import 'header-extended';
+
+@import 'main-page-catalog';
+
+@import 'our-salon';
+
+@import 'blog';
+
+@import 'gallery';
+
+@import 'subscription';
+
+@import 'footer';
+
+@media screen and (max-width: 1109.98px) {
+    .gallery-cont__items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .video-cont{
+        max-width: 555px;
+    }
+        
+}
+
+@media screen and (max-width: 767.98px) {
+    .header{
+        height: 812px;
+    }
+
+    .main-slogan{
+        margin: 250px auto 50px auto;
+        text-align: center;
+        font-family: 'Noto' serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+    }
+
+    .header-line{
+        display: none;
+    }  
+    
+    .brands{
+        display: none;
+    }    
+
+    .catalog-cont__categories-list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@import 'pop-up';

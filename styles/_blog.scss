@@ -1,0 +1,119 @@
+.blog-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $light-color;
+}
+
+.blog-cont{
+    flex-basis: 1110px;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $dark-color;
+}
+
+
+.blog-cont__articles{
+    display: flex;
+    margin-top: 55px;
+    width: 100%;
+}
+
+.blog-cont__articles-cont__list{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.blog-cont__articles-cont__article{
+    width: 350px;
+    height: 370px;
+    transition: transform 0.4s linear;
+}
+
+.blog-cont__articles-cont__article:hover{
+    transform: scale(1.1);
+}
+
+.article_1{
+    background-image: url(../images/article_img1.jpg);
+}
+
+.article_2{
+    background-image: url(../images/article_img2.jpg);
+}
+
+.article_3{
+    background-image: url(../images/article_img3.jpg);
+}
+
+.blog-cont__articles a:link{
+    color: $light-color;
+}
+
+.blog-cont__articles a:visited{
+    color: $light-color;
+}
+
+.blog-cont__articles-cont__article{
+    text-align: center;
+    padding-top: 248px;
+    padding-bottom: 35px;
+}
+
+.article_wrap{
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.article-capture{
+    display: inline;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.blog-cont__button{
+    border: 1px;
+    border-style: solid;
+    border-color: $light-color;
+    background: $dark-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 35px;
+    gap: 10px;
+    margin: 60px auto 0 auto;
+}
+
+.blog-cont__button:hover{
+    background-color: $light-color;
+    border: 1px solid $dark-color;
+    transition-duration: 500ms;
+}
+
+.blog-cont__button:hover > p{
+    color: $dark-color;
+}
+
+.blog-cont__button-text{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $light-color;
+}

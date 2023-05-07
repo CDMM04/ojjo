@@ -1,0 +1,144 @@
+.catalog-cont{
+    max-width: 1100px;
+    margin: 100px auto 120px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $dark-color;
+}
+
+
+
+.catalog-nav-wrap{
+    display: flex;
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+.catalog-cont__navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    min-height: 61px;
+}
+
+
+.catalog-cont__item>button{
+    position: relative;
+    width: 165px;
+    height: 55px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0 auto 0 auto;
+    background-color: #F9F9F9;
+    border: 1px solid #D6D6D6;
+    z-index: 1;
+    transition: all 0.5s;
+    /* box-shadow: 6px 6px 1px #D6D6D6; */
+}
+
+.catalog-cont__item>button::after{
+    content: "";
+    display: block;
+    width: 165px;
+    height: 55px;
+    position: absolute;
+    border: 1px solid #D6D6D6;
+    background-color: transparent;
+    top: 6px;
+    left: 6px;
+    z-index: 0;
+    mix-blend-mode: overlay;
+
+}
+
+.catalog-cont__item>button:hover{
+    color: $light-color;
+    background-color: $dark-color;
+    height: 61px;
+    transition: all 0.5s;
+}    
+
+.catalog-cont__item>button:hover::after {
+    display: none;
+}
+
+.catalog-cont__categories-cont{
+    display: flex;
+    margin-top: 55px;
+    
+}
+
+.catalog-cont__categories-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+
+.category_rings{
+    background-image: url(../images/rings.jpg);
+}
+
+.category_earrings{
+    background-image: url(../images/earrings.jpg);
+}
+
+.category_pendants{
+    background-image: url(../images/necklaces.jpg);
+}
+
+.category_cufflinks{
+    background-image: url(../images/cufflinks.jpg);
+}
+
+.category_bracelets{
+    background-image: url(../images/bracelets.jpg);
+}
+
+.category_watches{
+    background-image: url(../images/watches.jpg);
+}
+
+.catalog-cont__categories-cont a:link{
+    color: $light-color;
+}
+
+.catalog-cont__categories-cont a:visited{
+    color: $light-color;
+}
+
+.catalog-cont__categories-items{
+    text-align: center;
+    padding-top: 222px;
+    padding-bottom: 30px;
+    width: 350px;
+    height: 280px;
+    transition: transform 0.4s linear;
+}
+
+.catalog-cont__categories-items:hover{
+    transform: scale(1.1);
+
+}
+
+.items-capture{
+    display: inline;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}

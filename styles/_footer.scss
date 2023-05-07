@@ -1,0 +1,129 @@
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $light-color;
+}
+
+.footer-cont{
+    display: flex;
+    flex-basis: 1110px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+
+}
+
+.footer-cont__colums-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.footer-cont__column{
+    width: 255px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+}
+
+.column-header{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid $dark-color;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.column-content{
+    height: 100%;
+    padding-top: 30px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.useful-links-content{
+    display: flex;
+}
+
+.useful-links_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 15px;
+}
+
+.useful-links_list>li>a:link{
+    color: $dark-color;
+}
+
+.useful-links_list>li>a:visited{
+    color: $dark-color;
+}
+
+.payment-description{
+    margin-bottom: 21px;
+}
+
+.contact-details_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 15px;
+}
+
+.contact-details_list>li::before{
+    content: url(../images/icons/phone_icon.svg);
+    padding-right: 20.5px;
+    vertical-align: middle;
+}
+
+.contact-details_list>li:last-child::before{
+    content: url(../images/icons/mail_icon.svg);
+    padding-right: 21px;
+    vertical-align: middle;
+}
+
+.social-media-icons{
+    display: flex;
+    column-gap: 25px;
+    margin-top: 27px;
+}
+
+.footer-cont__last-line-cont{
+    border-top: 1px solid $dark-color;
+    width: 100%;
+    height: 61px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.footer-cont__last-line-cont>div>a:link{
+    color: $dark-color;
+}
+
+.footer-cont__last-line-cont>div>a:visited{
+    color: $dark-color;
+}

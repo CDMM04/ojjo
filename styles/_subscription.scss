@@ -1,0 +1,115 @@
+.subscription-wrap{
+    width: 100%;
+    background-image: url(../images/background_pattern.jpg);
+}
+
+.subscription-cont{
+    flex-basis: 1110px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $light-color;
+}
+
+.subscription-cont__subscription-box-cont{
+    width: 100%;
+    display: flex;
+    flex-basis: 50%;
+    column-gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subscription-cont__benefits-cont{
+    display: flex;
+    align-items: center;
+    width: 245px;
+    height: 105px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.subscription-cont__benefit::before{
+    content: url("data:image/svg+xml,%3csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11 8.5L7.25 10.6651L7.25 6.33494L11 8.5Z' fill='white'/%3e%3cpath d='M4.75 2.00481L16 8.5L4.75 14.9952L4.75 2.00481Z' stroke='white'/%3e%3c/svg%3e");
+    padding-right: 20px;
+    position: relative;
+}
+
+.subscription-box-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 448px;
+    height: 113px;
+    flex-grow: 0;
+    border: 1px solid $light-color;
+    padding: 14px 15px;
+}
+
+.subscription-box-cont__subscription-field-cont{
+    display: flex;
+    flex-basis: 418px;
+    height: 85px;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-color;
+}
+
+.subscription-box-cont__input{
+    max-width: 200px;
+    height: 45px;
+    border: 1px solid #D6D6D6;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.subscription-box-cont__input::placeholder{
+    color: rgba(51, 51, 51, 0.5);
+}
+
+
+.email-submit-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 35px;
+    gap: 10px;
+    background-color: $dark-color;
+    flex-basis: 159px;
+    height: 45px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $light-color;
+    
+}
+
+.email-submit-btn:hover{
+    cursor: pointer;
+    background-color: $light-color;
+    color: $dark-color;
+    border: 1px solid $dark-color;
+    transition-duration: 500ms;
+
+}
+

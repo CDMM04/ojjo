@@ -1,0 +1,244 @@
+.header{
+    width: 100%;
+    color: $light-color;
+    background-image: url('/images/bgc.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+}
+
+.container{
+    max-width: 1110px;
+}
+
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 25px ;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.header-menu a:link{
+    color: $light-color;
+}
+
+.header-menu a:visited{
+    color: $light-color;
+}
+
+.header-menu a:hover{
+    color: rgba(255,255,255,.3);
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.3);  
+    transition-duration: 500ms;
+}
+
+.account-icon:hover{
+    fill: rgba(255,255,255,.3); 
+    transition-duration: 500ms;
+}
+
+.like-icon:hover{
+    fill: rgba(255,255,255,.3); 
+    transition-duration: 500ms;
+}
+
+.header-menu__nav-cont{
+    display: flex;
+    flex-basis: 350px;
+}
+
+.header-menu__navbar{
+    display: flex;
+    column-gap: 40px;
+}
+
+.header-menu__logo-cont{
+    position: relative;
+    text-align: center;
+}
+
+.bril-container1{
+    position: absolute;
+    top: 17.9px;
+    left: 16px;
+}
+
+.bril-container2{
+    position: absolute;
+    top: 17.9px;
+    right: 15px;
+}
+
+.header-menu__menu-burger{
+    display: none;
+}
+
+.header-menu__right-bars-cont{
+    display: flex;
+    flex-basis: 350px;
+    justify-content: space-between;
+    column-gap: 8px;
+}
+
+.header-menu__search-bar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+input[type="search"]{
+    color: $light-color;
+    margin-left: 16px;
+    background-color: transparent;
+    width: 60px;
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: $light-color;
+}
+
+.header-menu__account-bar{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+
+
+.main-slogan{
+    margin: 523px auto 50px auto;
+    text-align: center;
+    font-family: 'Noto' serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+
+}
+
+.catalog-button{
+    border: 1px;
+    border-style: solid;
+    border-color: $light-color;
+    background-color: $dark-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 35px;
+    gap: 10px;
+    margin: 50px auto 80px auto;
+    font-family: 'Gilroy';
+    color: $light-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.catalog-link:hover > .catalog-button{
+    background: $light-color;
+    color: $dark-color;
+    transition-duration: 500ms;
+}
+
+
+.catalog-link:visited{
+    color: $light-color;
+}
+
+.header-line{
+    border: 1px solid $light-color;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+
+
+.brands{
+    text-align: center;
+}
+
+
+
+.brands-list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.brands-list>.brand_logo:not(:last-child){
+    border-right:$light-color solid 1px;
+}
+
+.brand_logo{
+    width: 190px;
+    height: 60px;
+    
+}
+
+@media screen and (max-width: 1109.98px) {
+    .header-menu{
+        padding: 25px 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 998.98px) {
+    .header-menu{
+        justify-content: space-between;
+    }
+
+    .header-menu__nav-cont{
+        display: none;
+    }
+
+    .header-menu__right-bars-cont{
+        display: none;
+    }
+
+    .header-menu__logo-cont{
+        margin-left: 35px;
+    }
+
+    .header-menu__menu-burger{
+        width: 50px;
+        height: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 8.33px;
+        margin-left: 20px;
+        margin-right: 34px;
+    }
+
+    .header-menu__menu-burger>span{
+        background-image: url(../images/icons/burger-line.svg);
+        background-position: center;
+        width: 33.33px;
+        height: 4.17px;
+    }
+
+    .header-menu__menu-burger>span:nth-child(2){
+        background-image: url(../images/icons/burger-line_short.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+}

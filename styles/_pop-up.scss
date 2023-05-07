@@ -1,0 +1,76 @@
+.popup-cont{
+    display: none;
+    width: 300px;
+    height: 300px;
+    background-color: $dark-color;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    margin-left: -150px;
+    border: 0.5px solid white;
+    
+    text-align: center;
+    font-family: 'Noto' serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 49px;
+    color: $light-color;
+    padding: 8px;
+
+}
+
+.visible{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.popup-cont__text{
+    text-align: center;
+    font-family: 'Noto' serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 49px;
+    color: $light-color;
+    margin-bottom: 12px;
+}
+
+.popup-cont__button{
+    width: 150px;
+
+    border: 1px;
+    border-style: solid;
+    border-color: $light-color;
+    background-color: $dark-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 35px;
+    font-family: 'Gilroy';
+    color: $light-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.popup-cont__button:hover{
+    border-color: $dark-color;
+    background-color: $light-color;
+    color: $dark-color;
+}
+
+body.popup-opened {
+    overflow-y: hidden;
+  }
+
+body.popup-opened>:not(.popup-cont){
+    filter: blur(5px);
+}

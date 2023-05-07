@@ -1,0 +1,124 @@
+.reg-title{
+    margin: 50px auto 25px auto;
+}
+
+.register-form{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    row-gap: 5px;
+}
+
+.register-form>label{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $dark-color;
+}
+
+.register-form>input{
+    background-color: #D6D6D6;
+    width: 300px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    color: $dark-color;
+    margin-bottom: 20px;
+}
+
+.register-form>input::placeholder{
+    text-transform: uppercase;
+}
+
+.register-form>input:last-child{
+    border: 1px solid $dark-color;
+}
+
+.checkbox-wrap{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.checkbox-wrap>label{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $dark-color;
+    padding-left: 5px;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+input[type="checkbox"] ~ span{
+    position: relative;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border: 1px solid black;
+    top: 2px;
+    right: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ span::before {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: "";
+    background-image: url(/images/icons/done_icon.svg);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+
+.register-form__error_message, .username_error, .email_error, .password1_error, .password2_error, .checkbox_error{
+    display: block;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: red;
+
+}
+
+.register-form__success_message{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: green;
+}
+
+
+
